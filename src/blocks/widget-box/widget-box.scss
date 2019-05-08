@@ -1,0 +1,83 @@
+// В этом файле должны быть стили для БЭМ-блока widget-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.widget-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+  border-radius: 5px;
+  border: solid 1px #a2a2a2;
+
+  &__header {
+    border-bottom: 1px solid #a2a2a2;
+    padding: 15px 20px;
+    display: flex;
+
+    &--red {
+      border-bottom: 2px solid #ff0000;;
+    }
+  }
+
+  &__title {
+    color: #e2001a;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  &__more {
+    color: #636363;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+
+  &--notifi {
+    background-image: linear-gradient(177deg, #0079b9, #00355f);
+    border:none;
+
+    #{$block-name}__header {
+      border-bottom: none;
+    }
+
+    #{$block-name}__title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &--carousel {
+    border:none;
+    background: transparent;
+    border-radius: 0;
+
+    #{$block-name}__header {
+      padding: 7px 0 15px 0;
+    }
+
+    #{$block-name}__title {
+      font-size: 18px;
+    }
+
+    #{$block-name}__body {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+}

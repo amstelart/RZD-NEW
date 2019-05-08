@@ -1,0 +1,62 @@
+// В этом файле должны быть стили для БЭМ-блока widget-tab-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.widget-tab-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  // margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  column-count: 3;
+  // column-width: 200px;
+  column-gap: 2em;
+
+  > li {
+    font-size: 17px;
+    font-weight: 700;
+
+    span {
+      color: #7d7a7a;
+      font-size: 14px;
+      margin-left: 5px;
+      font-weight: 400;
+    }
+  }
+
+  > li > ul {
+    list-style: none;
+    padding-left: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  > li > ul > li {
+    margin: 5px 0;
+
+    a {
+      color: #7d7a7a;
+      display: inline-block;
+      font-size: 12px;
+
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #e2001a;
+      }
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    column-count: 2;
+    > li > ul {
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: ($screen-sm - 1)) {
+    column-count: 1;
+  }
+}

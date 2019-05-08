@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока l-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.l-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container;
+  }
+
+  &__wrap {
+    max-width: 455px;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__separator {
+    height: 3px;
+    background: #ff0000;
+  }
+}

@@ -1,0 +1,45 @@
+// В этом файле должны быть стили для БЭМ-блока l-seller, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.l-seller {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #f3f2f2;
+  padding: 20px 0 40px 0;
+
+  &__container {
+    @include container;
+  }
+
+  &__inner {
+    @include row;
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(xl, 3);
+
+    .box {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__main {
+    @include col();
+    @include col(xl, 9);
+  }
+
+  &__list {
+    @include row;
+
+    .card {
+      @include col();
+      @include col(md, 4);
+      @include col(sm, 6);
+      margin-bottom: 30px;
+    }
+  }
+
+}

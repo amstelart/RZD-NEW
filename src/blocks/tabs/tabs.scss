@@ -1,0 +1,125 @@
+// В этом файле должны быть стили для БЭМ-блока tabs, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$gray-lightest:               hsl(0, 0%, 90%) !default;
+
+$text-color:                  hsl(0, 0%, 10%) !default;
+$text-color--muted:           hsl(0, 0%, 50%) !default;
+
+$border-color:                hsl(0, 0%, 60%) !default;
+
+$line-height:                 1.375em !default;
+
+$field-padding-vertical:      0.3em !default;
+$field-padding-horizontal:    0.7em !default;
+
+.tabs {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    cursor: pointer;
+
+    .no-js & {
+      display: none;
+    }
+
+    // &:after {
+    //   content: '';
+    //   flex-grow: 1;
+    //   height: 1px;
+    //   background-color: $border-color;
+    // }
+  }
+
+  &__link-wrap {
+    position: relative;
+    flex-grow: 1;
+    border: 1px solid $border-color;
+
+    &:first-child {
+      border-radius: 5px 0 0 0;
+      #{$block-name}__link {
+        border-radius: 5px 0 0 0;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 5px 0 0;
+
+      #{$block-name}__link {
+        border-radius: 0 5px 0 0;
+      }
+    }
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+
+    &--active {
+
+      border-bottom-color: #fff;
+
+      #{$block-name}__link {
+        color: #e2001a;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 14px 20px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f3f2f2;
+
+    &:hover,
+    &:focus {
+      color: #e2001a;
+      text-decoration: none;
+    }
+  }
+
+  &__content-wrapper {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+  }
+
+  &__content-item {
+
+    .js & {
+      display: none;
+    }
+
+    &--active {
+
+      .js & {
+        display: block;
+      }
+    }
+  }
+
+  &--entry-box {
+    #{$block-name}__content-wrapper {
+      padding: 20px 0;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// В этом файле должны быть стили для БЭМ-блока l-entry, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.l-entry {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #f3f2f2;
+  min-height: 80vh;
+  padding: 40px 0;
+
+  &__container {
+    max-width: 555px;
+    margin: auto;
+  }
+
+}

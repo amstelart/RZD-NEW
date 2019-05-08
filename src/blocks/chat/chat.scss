@@ -1,0 +1,64 @@
+// В этом файле должны быть стили для БЭМ-блока chat, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.chat {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+  }
+
+  &__messages {
+
+    margin: 10px 0;
+
+    &--user {
+      align-self: flex-start;
+
+      #{$block-name}__messages-header {
+        text-align: left;
+      }
+    }
+
+    &--you {
+      align-self: flex-end;
+
+      #{$block-name}__messages-header {
+        text-align: right;
+      }
+
+      #{$block-name}__messages-body {
+        background-color: #dfe6ed;
+      }
+    }
+  }
+  &__messages-header {
+    margin-bottom: 5px;
+
+    .name {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: italic;
+      color: #000;
+      margin-right: 10px;
+    }
+    .date {
+      font-size: 14px;
+      color: #7d7a7a;
+      font-weight: normal;
+    }
+  }
+  &__messages-body {
+    border-radius: 10px;
+    background-color: #ececec;
+    padding: 12px 17px;
+
+    p {
+      margin: 0;
+    }
+  }
+}

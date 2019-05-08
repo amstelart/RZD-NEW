@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="l-lk" role="main">
+        <div class="l-lk__container">
+          <div class="l-lk__inner">
+            <div class="l-lk__sidebar">
+              <div class="box">
+                <ul class="menu menu--sidebar">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Мои объявления</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Сообщения</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Настройки</a>
+                  </li>
+                  <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="#">Подписка</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-lk__main">
+              <div class="box box--subskribe">
+                <div class="box__header">
+                  <h1 class="l-lk__title">Подписка</h1>
+                  <div class="box__action">
+                    <p class="lead-text">У вас еще не оформлена подписка. <br>Вы не сможете добавить больше 10 объявленй без подписки</p>
+                    <a class="btn" href="#">Оформить подписку</a>
+                  </div>
+                </div>
+                <div class="box__body">
+                  <p class="lead-text"><strong>С подпиской вы можете:</strong></p>
+                  <div>
+                    <p class="alert alert--warning">Добавлять неограниченное количество объявлений</p>
+                  </div>
+                  <div>
+                    <p class="alert alert--warning">БЕСПЛАТНО вывести в ТОП, 5 любых обявлений</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

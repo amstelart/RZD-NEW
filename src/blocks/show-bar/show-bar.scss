@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока show-bar, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.show-bar {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__title {
+    color: #000;
+    margin-right: 10px;
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 6px;
+
+      span {
+        color: #000;
+      }
+
+      a {
+        color: #ff0000;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}

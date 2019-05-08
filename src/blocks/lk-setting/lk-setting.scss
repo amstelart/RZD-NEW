@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока lk-setting, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.lk-setting {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__form {
+
+  }
+
+  &__part {
+
+    &:not(:first-child) {
+      border-top: 1px solid #dfdfdf;
+      padding-top: 20px;
+    }
+  }
+
+  &__part-title {
+    margin-top: 0;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__fields-wrap {
+    @media (min-width: $screen-xl) {
+      max-width: 525px;
+    }
+  }
+}

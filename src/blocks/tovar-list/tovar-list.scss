@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока tovar-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.tovar-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__bar-info {
+    flex-grow: 1;
+  }
+  &__bar-opt {
+    flex-shrink: 0;
+  }
+
+  &__body {
+
+  }
+
+  &__footer {
+
+  }
+}

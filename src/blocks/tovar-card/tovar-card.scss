@@ -1,0 +1,119 @@
+// В этом файле должны быть стили для БЭМ-блока tovar-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.tovar-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  & + & {
+    margin-top: 30px;
+  }
+
+  &__inner {
+    border: solid 1px #a2a2a2;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+  }
+
+  &__img-wrap {
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    img {
+      border-radius: 5px;
+      display: block;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__header {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+  }
+  &__header-info {
+    flex-grow: 1;
+  }
+
+  &__header-btn {
+    flex-shrink: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+
+    a {
+      color: #000;
+    }
+  }
+
+  &__bar-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__actions {
+    font-size: 0;
+    margin-right: 10px;
+    a {
+      width: 19px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  &__actions-like {
+    width: 19px;
+    height: 18px;
+    background-image: url('../img/like-icon.png');
+  }
+  &__actions-share {
+    width: 19px;
+    height: 18px;
+    background-image: url('../img/share-icon.png');
+  }
+
+  &__bar-info {
+    color: #7f7b7b;
+
+    span {
+      margin-right: 16px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__char {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  &__descr {}
+
+  &__char {
+    flex-basis: 40%;
+
+    ul {
+      li {}
+      strong {
+        font-weight: 400;
+        color: #7f7b7b;
+      }
+    }
+  }
+  &__descr {
+    flex-basis: 60%;
+  }
+}

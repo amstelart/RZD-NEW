@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="l-lk" role="main">
+        <div class="l-lk__container">
+          <div class="l-lk__inner">
+            <div class="l-lk__sidebar">
+              <div class="box">
+                <ul class="menu menu--sidebar">
+                  <li class="menu__item">
+                    <a class="menu__link" href="lk-ab.html">Мои объявления</a>
+                  </li>
+                  <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="lk-messages.html">Сообщения</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Настройки</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Подписка</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-lk__main">
+              <form class="box box--messages" action="">
+                <div class="box__header">
+                  <h1 class="l-lk__title">Список сообщений</h1>
+                  <a href="#" class="btn">Удалить</a>
+                </div>
+                <div class="box__body">
+                  <div class="field-messages">
+                    <div class="field-messages__input-wrap">
+                      <label class="field-messages__name">
+                        <input class="field-messages__input" type="checkbox" id="" name="">
+                        <span class="field-messages__name-icon"></span>
+                      </label>
+                      <a href="lk-messages--opened.html" class="field-messages__content-wrap">
+                        <div class="field-messages__content-col">
+                          <p class="field-messages__author">Николай</p>
+                          <p class="field-messages__category">Суфле междувагонных соединений</p>
+                          <p class="field-messages__text">А можно сделать скидку 10%?</p>
+                        </div>
+                        <div class="field-messages__content-col">
+                          <span class="field-messages__date">28.01.2018</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="field-messages">
+                    <div class="field-messages__input-wrap">
+                      <label class="field-messages__name">
+                        <input class="field-messages__input" type="checkbox" id="" name="" checked>
+                        <span class="field-messages__name-icon"></span>
+                      </label>
+                      <a href="lk-messages--opened.html" class="field-messages__content-wrap">
+                        <div class="field-messages__content-col">
+                          <p class="field-messages__author">Николай</p>
+                          <p class="field-messages__category">Суфле междувагонных соединений</p>
+                          <p class="field-messages__text">А можно сделать скидку 10%?</p>
+                        </div>
+                        <div class="field-messages__content-col">
+                          <span class="field-messages__date">28.01.2018</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="field-messages">
+                    <div class="field-messages__input-wrap">
+                      <label class="field-messages__name">
+                        <input class="field-messages__input" type="checkbox" id="" name="">
+                        <span class="field-messages__name-icon"></span>
+                      </label>
+                      <a href="lk-messages--opened.html" class="field-messages__content-wrap">
+                        <div class="field-messages__content-col">
+                          <p class="field-messages__author">Николай</p>
+                          <p class="field-messages__category">Суфле междувагонных соединений</p>
+                          <p class="field-messages__text">А можно сделать скидку 10%?</p>
+                        </div>
+                        <div class="field-messages__content-col">
+                          <span class="field-messages__date">28.01.2018</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

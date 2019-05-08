@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока l-notifi, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.l-notifi {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+
+  &__container {
+    @include container;
+  }
+
+  &__body {
+    border-radius: 2px;
+    background-color: #fae6ab;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+      flex-grow: 1;
+
+      .user-link {
+        text-decoration: underline;
+        color: #000;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

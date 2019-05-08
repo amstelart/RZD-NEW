@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока option-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.option-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+
+  &__icon-wrap {
+    width: 35px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__info-img-wrap {
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  &__info-cost {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+}

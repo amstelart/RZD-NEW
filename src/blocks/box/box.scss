@@ -1,0 +1,145 @@
+// В этом файле должны быть стили для БЭМ-блока box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: 5px;
+  border: solid 1px #a2a2a2;
+  background-color: #fff;
+  padding: 25px 30px 25px 30px;
+
+  &--subskribe {
+    padding: 0;
+
+    #{$block-name}__header {
+      padding: 25px 30px 25px 30px;
+      border-bottom: solid 1px #e1e1e1;
+    }
+    #{$block-name}__action,
+    #{$block-name}__details {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .lead-text {
+        margin-right: auto;
+      }
+
+      .amount-text {
+        span {
+          display: inline-block;
+          text-align: center;
+          margin-left: 10px;
+          border: 2px solid #e2001a;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 10px;
+          padding: 10px 17px;
+        }
+      }
+    }
+    #{$block-name}__body {
+      padding: 25px 30px 25px 30px;
+
+      .alert {
+        display: inline-block;
+        margin-top: 0;
+      }
+    }
+    #{$block-name}__footer {
+      padding: 25px 30px 25px 30px;
+      border-top: solid 1px #e1e1e1;
+    }
+    #{$block-name}__options {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btn-link {
+
+        &:first-child {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  &--messages {
+    #{$block-name}__header {
+      display: flex;
+      flex-wrap: wrap;
+
+      .l-lk__title {
+        flex-grow: 1;
+      }
+
+      .btn {
+        min-width: auto;
+      }
+    }
+  }
+
+  &--chat {
+    padding: 0;
+
+    #{$block-name}__header {
+      padding: 25px 30px 25px 30px;
+      border-bottom: solid 1px #a0a0a0;
+      display: flex;
+
+      .l-lk__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .back-link {
+        flex-shrink: 0;
+        width: 25px;
+        height: 17px;
+        display: inline-block;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25px' height='17px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M0.323,7.677 L7.768,0.318 C8.222,-0.131 8.959,-0.131 9.413,0.318 C9.867,0.768 9.867,1.495 9.413,1.944 L3.954,7.341 L23.837,7.341 C24.479,7.341 25.000,7.855 25.000,8.490 C25.000,9.125 24.479,9.640 23.837,9.640 L3.954,9.640 L9.413,15.037 C9.867,15.485 9.867,16.213 9.413,16.662 C9.186,16.887 8.888,16.999 8.590,16.999 C8.293,16.999 7.995,16.887 7.768,16.662 L0.323,9.303 C-0.131,8.854 -0.131,8.126 0.323,7.677 Z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        margin-right: 10px;
+      }
+    }
+    #{$block-name}__body {
+      padding: 25px 30px 25px 30px;
+    }
+    #{$block-name}__footer {
+      padding: 15px 30px 15px 30px;
+      border-top: solid 1px #a2a2a2;
+      background: #ebebeb;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+
+  &--sm {
+
+    @media (min-width: $screen-xl) {
+      max-width: 848px;
+      margin: auto;
+    }
+  }
+
+  &--ab {
+    padding: 0;
+
+    #{$block-name}__header {
+      padding: 25px 30px 25px 30px;
+      border-bottom: solid 1px #a0a0a0;
+    }
+
+    #{$block-name}__body {
+      padding: 25px 30px 25px 30px;
+
+      .pagination {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

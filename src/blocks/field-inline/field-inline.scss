@@ -1,0 +1,38 @@
+// В этом файле должны быть стили для БЭМ-блока field-inline, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-inline {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &.field-text,
+  &.field-radio,
+  &.field-select {
+    display: flex;
+  }
+
+  .field-text__name,
+  .field-radio__title,
+  .field-select__name {
+    flex-shrink: 0;
+    width: 160px;
+    color: #7f7b7b;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+  }
+
+  .field-text__input-wrap,
+  .field-radio__radio-wrap,
+  .field-select__select-wrap {
+    flex-grow: 1;
+  }
+
+  .field-radio__input-wrap {
+    // margin-top: 0.6875em;
+    margin-top: 0;
+  }
+
+}

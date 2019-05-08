@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="l-entry" role="main">
+        <div class="l-entry__container">
+          <form action="" class="entry-box">
+            <div class="entry-box__header">
+              <h2 class="entry-box__title">Регистрация</h2>
+              <div class="entry-box__type">
+                <div class="field-radio">
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <span class="field-radio__name-text">Юридическое лицо</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Физическое лицо</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="entry-box__body">
+              <div class="tabs tabs--entry-box">
+                <ul class="tabs__links" role="tablist">
+                  <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                    <a href="#entry-box-tab-01" class="tabs__link" data-toggle="tab" role="tab">1 этап</a>
+                  </li>
+                  <li class="tabs__link-wrap" role="presentation">
+                    <span data-target="#entry-box-tab-02" class="tabs__link" data-toggle="tab" role="tab">2 этап</span>
+                  </li>
+                </ul>
+                <div class="tabs__content-wrapper">
+                  <div class="tabs__content-item tabs__content-item--active" id="entry-box-tab-01" role="tabpanel">
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Форма собственности</option>
+                          <option>Значение 1</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+                      </div>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Название компании" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="ИНН" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="ОГРН" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="КПП" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="БИК Банка" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Кор/счет" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Р/счет" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Наименование банка" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <button class="btn">Дальше</button>
+                    </div>
+                  </div>
+                  <div class="tabs__content-item" id="entry-box-tab-02" role="tabpanel">
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="ФИО контактного лица" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Физический адрес" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="password" placeholder="Пароль" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="password" placeholder="Повторите пароль" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <button class="btn">Зарегистрироваться</button>
+                      <div class="field-checkbox">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                          <span class="field-checkbox__name-text">Я согласен с</span> <a href="#">условиями обработки данных</a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

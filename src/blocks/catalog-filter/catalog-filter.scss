@@ -1,0 +1,35 @@
+// В этом файле должны быть стили для БЭМ-блока catalog-filter, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.catalog-filter {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__field-wrap {
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #a2a2a2;
+    background-color: #fff;
+    padding: 20px 20px 0 20px;
+  }
+
+  &__field-group {
+    @include row;
+
+    .field-select {
+      @include col();
+      @include col(xl, 3);
+      @include col(lg, 4);
+      margin-bottom: 20px;
+    }
+  }
+
+  &__action {
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #a2a2a2;
+    border-top: none;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+}
