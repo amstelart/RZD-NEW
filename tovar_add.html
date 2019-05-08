@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__container">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"></a></div>
+          <div class="page-header__inner">
+            <div class="page-header__top">
+              <div class="page-header__logo">
+                <a class="logo" href="index.html">
+                  <img src="img/logo.png" alt="РЗД">
+                </a>
+              </div>
+              <div class="page-header__search">
+                <form class="search-form">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="search" placeholder="Поиск по товарам">
+                    </span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="page-header__bottom">
+              <div class="page-header__nav">
+                <nav class="main-nav" id="main-nav">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                    <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-header__add-btn">
+                <a href="#" class="btn">Добавить объявление</a>
+              </div>
+              <div class="page-header__entry">
+                <div class="entry-nav">
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Вход</a>
+                  </li>
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Регистрация</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="l-page" role="main">
+        <div class="l-page__container">
+          <ul class="breadcrumbs breadcrumbs--sm">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--icon">
+                <svg width="22" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#temp-icon-left-arrow"></use></svg>
+                <span>Назад</span>
+              </a>
+            </li>
+          </ul>
+          <div class="box box--sm">
+            <form action="" class="add-tovar">
+              <div class="add-tovar__part">
+                <h2 class="add-tovar__title">Добавить объявления</h2>
+                <div class="add-tovar__field-wrap-sm">
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Служба</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Вагонная служба</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Вид товара</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Запасные части</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Категория</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Ходовая часть</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Подкатегория</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Литые детали тележки</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Нуменклатура</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Рамка боковая</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="add-tovar__part">
+                <div class="add-tovar__field-wrap-sm">
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Местоположение</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Центральный полигон</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                </div>
+                <div class="add-tovar__field-wrap-md">
+                  <label class="field-text field-inline">
+                    <div class="field-select__name">Описание</div>
+                    <span class="field-text__input-wrap">
+                      <textarea class="field-text__input" placeholder="Введите описание товара" rows="8" cols="80"></textarea>
+                    </span>
+                  </label>
+                </div>
+                <div class="add-tovar__field-wrap-sm">
+                  <label class="field-text field-inline">
+                    <span class="field-text__name">Цена:</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="5700" id="" name="">
+                    </span>
+                    <span class="field-text__sub-name">руб</span>
+                  </label>
+                  <div class="field-radio field-inline">
+                    <div class="field-radio__title">Тип товара:</div>
+                    <div class="field-radio__input-wrap">
+                      <label class="field-radio__name">
+                        <input class="field-radio__input" type="radio" id="" name="demo-radio" checked>
+                        <span class="field-radio__name-text">Новый</span>
+                      </label>
+                    </div>
+                    <div class="field-radio__input-wrap">
+                      <label class="field-radio__name">
+                        <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                        <span class="field-radio__name-text">Б/У</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-tovar__part">
+                <h2 class="add-tovar__title">Контактная информация</h2>
+                <div class="add-tovar__field-wrap-sm">
+                  <label class="field-text field-inline">
+                    <span class="field-text__name">Имя</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" value="Иван" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text field-inline">
+                    <span class="field-text__name">Телефон</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" value="+7-920-212-21-51" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text field-inline">
+                    <span class="field-text__name">E-mail</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="email" value="email@email.com" id="" name="">
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="add-tovar__part">
+                <div class="add-tovar__field-wrap-sm">
+                  <div class="field-actions">
+                    <button class="btn">Подать объявление</button>
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">Я согласен с</span> <a href="#">условиями обработки данных</a>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__container">
+          <div class="page-footer__inner">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="PZD"></a>
+            <ul class="page-footer__nav">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Продавцы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="btn">Добавить объявление</a>
+          </div>
+          <p class="page-footer__copyright"><a href="#">Разработано в Showbiz</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

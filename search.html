@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__container">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"></a></div>
+          <div class="page-header__inner">
+            <div class="page-header__top">
+              <div class="page-header__logo">
+                <a class="logo" href="index.html">
+                  <img src="img/logo.png" alt="РЗД">
+                </a>
+              </div>
+              <div class="page-header__search">
+                <form class="search-form">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="search" placeholder="Поиск по товарам">
+                    </span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="page-header__bottom">
+              <div class="page-header__nav">
+                <nav class="main-nav" id="main-nav">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                    <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-header__add-btn">
+                <a href="#" class="btn">Добавить объявление</a>
+              </div>
+              <div class="page-header__entry">
+                <div class="entry-nav">
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Вход</a>
+                  </li>
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Регистрация</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="l-page" role="main">
+        <div class="l-page__container">
+          <h1 class="l-page__title">Поиск</h1>
+          <form action="" class="page-search">
+            <label class="page-search__input-wrap">
+              <input class="page-search__input" type="search" value="Колесная пара б/у">
+            </label>
+            <a href="#" class="btn page-search__btn">Поиск</a>
+          </form>
+        </div>
+      </main>
+
+      <div class="l-search">
+        <div class="l-search__container">
+
+          <div class="tovar-list">
+            <div class="tovar-list__bar">
+              <div class="tovar-list__bar-info search-stat">Результатов: <span>351</span></div>
+              <div class="tovar-list__bar-opt">
+                <form class="sort" action=""></form>
+                <div class="view-nav">
+                  <a href="#" class="view-nav__btn view-nav__btn--list active"><span class="icon"></span></a>
+                  <a href="#" class="view-nav__btn view-nav__btn--tab"><span class="icon"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="tovar-list__body">
+              <div class="tovar-card">
+                <div class="tovar-card__inner">
+                  <a href="#" class="tovar-card__img-wrap">
+                    <img src="img/tovar-card-img.jpg" alt="" class="tovar-card-img">
+                  </a>
+                  <div class="tovar-card__content">
+                    <div class="tovar-card__header">
+                      <div class="tovar-card__header-info">
+                        <h2 class="tovar-card__title"><a href="#">Колесная пара б/у</a></h2>
+                        <div class="tovar-card__bar-wrap">
+                          <div class="tovar-card__actions">
+                            <a class="tovar-card__actions-like" href="#"></a>
+                            <a class="tovar-card__actions-share" href="#"></a>
+                          </div>
+                          <div class="tovar-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                      <div class="tovar-card__header-btn">
+                        <a href="#" class="btn">Написать продавцу</a>
+                      </div>
+                    </div>
+                    <div class="tovar-card__info">
+                      <div class="tovar-card__char">
+                        <h4>Характеристики</h4>
+                        <ul>
+                          <li><strong>Состояние:</strong> б/у</li>
+                          <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                          <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                          <li><strong>Вес:</strong> 2х55кг</li>
+                          <li><strong>Страна-производитель:</strong> Россия</li>
+                        </ul>
+                      </div>
+                      <div class="tovar-card__descr">
+                        <h4>Описание</h4>
+                        <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar-card">
+                <div class="tovar-card__inner">
+                  <a href="#" class="tovar-card__img-wrap">
+                    <img src="img/tovar-card-img.jpg" alt="" class="tovar-card-img">
+                  </a>
+                  <div class="tovar-card__content">
+                    <div class="tovar-card__header">
+                      <div class="tovar-card__header-info">
+                        <h2 class="tovar-card__title"><a href="#">Колесная пара б/у</a></h2>
+                        <div class="tovar-card__bar-wrap">
+                          <div class="tovar-card__actions">
+                            <a class="tovar-card__actions-like" href="#"></a>
+                            <a class="tovar-card__actions-share" href="#"></a>
+                          </div>
+                          <div class="tovar-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                      <div class="tovar-card__header-btn">
+                        <a href="#" class="btn">Написать продавцу</a>
+                      </div>
+                    </div>
+                    <div class="tovar-card__info">
+                      <div class="tovar-card__char">
+                        <h4>Характеристики</h4>
+                        <ul>
+                          <li><strong>Состояние:</strong> б/у</li>
+                          <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                          <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                          <li><strong>Вес:</strong> 2х55кг</li>
+                          <li><strong>Страна-производитель:</strong> Россия</li>
+                        </ul>
+                      </div>
+                      <div class="tovar-card__descr">
+                        <h4>Описание</h4>
+                        <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar-card">
+                <div class="tovar-card__inner">
+                  <a href="#" class="tovar-card__img-wrap">
+                    <img src="img/tovar-card-img.jpg" alt="" class="tovar-card-img">
+                  </a>
+                  <div class="tovar-card__content">
+                    <div class="tovar-card__header">
+                      <div class="tovar-card__header-info">
+                        <h2 class="tovar-card__title"><a href="#">Колесная пара б/у</a></h2>
+                        <div class="tovar-card__bar-wrap">
+                          <div class="tovar-card__actions">
+                            <a class="tovar-card__actions-like" href="#"></a>
+                            <a class="tovar-card__actions-share" href="#"></a>
+                          </div>
+                          <div class="tovar-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                      <div class="tovar-card__header-btn">
+                        <a href="#" class="btn">Написать продавцу</a>
+                      </div>
+                    </div>
+                    <div class="tovar-card__info">
+                      <div class="tovar-card__char">
+                        <h4>Характеристики</h4>
+                        <ul>
+                          <li><strong>Состояние:</strong> б/у</li>
+                          <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                          <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                          <li><strong>Вес:</strong> 2х55кг</li>
+                          <li><strong>Страна-производитель:</strong> Россия</li>
+                        </ul>
+                      </div>
+                      <div class="tovar-card__descr">
+                        <h4>Описание</h4>
+                        <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar-card">
+                <div class="tovar-card__inner">
+                  <a href="#" class="tovar-card__img-wrap">
+                    <img src="img/tovar-card-img.jpg" alt="" class="tovar-card-img">
+                  </a>
+                  <div class="tovar-card__content">
+                    <div class="tovar-card__header">
+                      <div class="tovar-card__header-info">
+                        <h2 class="tovar-card__title"><a href="#">Колесная пара б/у</a></h2>
+                        <div class="tovar-card__bar-wrap">
+                          <div class="tovar-card__actions">
+                            <a class="tovar-card__actions-like" href="#"></a>
+                            <a class="tovar-card__actions-share" href="#"></a>
+                          </div>
+                          <div class="tovar-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                      <div class="tovar-card__header-btn">
+                        <a href="#" class="btn">Написать продавцу</a>
+                      </div>
+                    </div>
+                    <div class="tovar-card__info">
+                      <div class="tovar-card__char">
+                        <h4>Характеристики</h4>
+                        <ul>
+                          <li><strong>Состояние:</strong> б/у</li>
+                          <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                          <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                          <li><strong>Вес:</strong> 2х55кг</li>
+                          <li><strong>Страна-производитель:</strong> Россия</li>
+                        </ul>
+                      </div>
+                      <div class="tovar-card__descr">
+                        <h4>Описание</h4>
+                        <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar-card">
+                <div class="tovar-card__inner">
+                  <a href="#" class="tovar-card__img-wrap">
+                    <img src="img/tovar-card-img.jpg" alt="" class="tovar-card-img">
+                  </a>
+                  <div class="tovar-card__content">
+                    <div class="tovar-card__header">
+                      <div class="tovar-card__header-info">
+                        <h2 class="tovar-card__title"><a href="#">Колесная пара б/у</a></h2>
+                        <div class="tovar-card__bar-wrap">
+                          <div class="tovar-card__actions">
+                            <a class="tovar-card__actions-like" href="#"></a>
+                            <a class="tovar-card__actions-share" href="#"></a>
+                          </div>
+                          <div class="tovar-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                      <div class="tovar-card__header-btn">
+                        <a href="#" class="btn">Написать продавцу</a>
+                      </div>
+                    </div>
+                    <div class="tovar-card__info">
+                      <div class="tovar-card__char">
+                        <h4>Характеристики</h4>
+                        <ul>
+                          <li><strong>Состояние:</strong> б/у</li>
+                          <li><strong>ТУ:</strong> 2500-295-00152106-93</li>
+                          <li><strong>Бренд:</strong> ОПТОН-ТЕХНО</li>
+                          <li><strong>Вес:</strong> 2х55кг</li>
+                          <li><strong>Страна-производитель:</strong> Россия</li>
+                        </ul>
+                      </div>
+                      <div class="tovar-card__descr">
+                        <h4>Описание</h4>
+                        <p>Продам или обменяю чери бонус. Требует небольших вложений, за это цена занижена. Торг при встрече.Возможен обмен на другую модель с доплатой. Рассмотрю варианты. Фотография из интернета</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tovar-list__footer">
+              <div class="pagination">
+                <a href="" class="pagination__item">1</a>
+                <a href="" class="pagination__item">2</a>
+                <a href="" class="pagination__item pagination__item--active">3</a>
+                <a href="" class="pagination__item">4</a>
+                <a href="" class="pagination__item">5</a>
+                <a href="" class="pagination__item">6</a>
+                <a href="" class="pagination__item">7</a>
+                <a href="" class="pagination__item">8</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="l-search__separator"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__container">
+          <div class="page-footer__inner">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="PZD"></a>
+            <ul class="page-footer__nav">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Продавцы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="btn">Добавить объявление</a>
+          </div>
+          <p class="page-footer__copyright"><a href="#">Разработано в Showbiz</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

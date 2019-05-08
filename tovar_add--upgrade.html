@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>RZD</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__container">
+          <div class="page-header__banner"><a href="#"><img src="img/top-banner.jpg"></a></div>
+          <div class="page-header__inner">
+            <div class="page-header__top">
+              <div class="page-header__logo">
+                <a class="logo" href="index.html">
+                  <img src="img/logo.png" alt="РЗД">
+                </a>
+              </div>
+              <div class="page-header__search">
+                <form class="search-form">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="search" placeholder="Поиск по товарам">
+                    </span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="page-header__bottom">
+              <div class="page-header__nav">
+                <nav class="main-nav" id="main-nav">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-about.html">О компании</a></li>
+                    <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="page-forum.html">Форум</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-shops.html">Магазин</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="page-contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="page-header__add-btn">
+                <a href="#" class="btn">Добавить объявление</a>
+              </div>
+              <div class="page-header__entry">
+                <div class="entry-nav">
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Вход</a>
+                  </li>
+                  <li class="entry-nav__item">
+                    <a href="#" class="entry-nav__link">Регистрация</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="l-page" role="main">
+        <div class="l-page__container">
+          <ul class="breadcrumbs breadcrumbs--sm">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--icon">
+                <svg width="22" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#temp-icon-left-arrow"></use></svg>
+                <span>Назад</span>
+              </a>
+            </li>
+          </ul>
+          <div class="box box--sm">
+            <form action="" class="options-tovar">
+              <div class="options-tovar__part-card">
+                <h2 class="options-tovar__title">Поднять объявление при подаче</h2>
+                <div class="options-tovar__card-wrap">
+                  <div class="ab-card ab-card--options">
+                    <div class="ab-card__inner">
+                      <div class="ab-card__img-wrap">
+                        <img src="img/ab-card-img.jpg" alt="" class="ab-card__img">
+                      </div>
+                      <div class="ab-card__content">
+                        <div class="ab-card__header">
+                          <h2 class="ab-card__title">Суфле междувагонных соединений</h2>
+                          <p class="ab-card__cost">152 555 Р</p>
+                        </div>
+                        <div class="ab-card__progress">
+                          <div class="progress">
+                            <div class="progress__bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                              <span class="progress__bartext"></span>
+                            </div>
+                          </div>
+                          <div class="progress__info">Объявление завершится через 2 месяца 3 дня</div>
+                        </div>
+                        <div class="ab-card__bar">
+                          <div class="ab-card__bar-info"><span>№ 152698</span><span>25.01.2018</span><span>150  (9 сегодня)</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="options-tovar__card-text">Пример, как будет выглядеть ваше объявление</p>
+              </div>
+
+              <div class="options-tovar__part">
+                <h2 class="options-tovar__title">Выберите услугу</h2>
+
+                <div class="field-options">
+                  <div class="field-options__card-wrap">
+                    <label class="field-options__card">
+                      <input class="field-options__input" type="radio" id="" name="options-radio" checked>
+                      <div class="field-options__card-body">
+                        <div class="option-card">
+                          <div class="option-card__icon-wrap">
+                            <img src="img/option-card-icon-01.png" alt="">
+                          </div>
+                          <div class="option-card__text">
+                            <p>Поднятие объявления на 5 дней</p>
+                          </div>
+                          <div class="option-card__info">
+                            <div class="option-card__info-img-wrap">
+                              <img src="img/option-card-img-01.png" alt="">
+                            </div>
+                            <div class="option-card__info-cost">190 руб.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="field-options__card-wrap">
+                    <label class="field-options__card">
+                      <input class="field-options__input" type="radio" id="" name="options-radio" checked>
+                      <div class="field-options__card-body">
+                        <div class="option-card">
+                          <div class="option-card__icon-wrap">
+                            <img src="img/option-card-icon-02.png" alt="">
+                          </div>
+                          <div class="option-card__text">
+                            <p>Поднятие объявления на 10 дней + добавление эффектного графического выделения объявления</p>
+                          </div>
+                          <div class="option-card__info">
+                            <div class="option-card__info-img-wrap">
+                              <img src="img/option-card-img-02.png" alt="">
+                            </div>
+                            <div class="option-card__info-cost">390 руб.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="field-options__card-wrap">
+                    <label class="field-options__card">
+                      <input class="field-options__input" type="radio" id="" name="options-radio" checked>
+                      <div class="field-options__card-body">
+                        <div class="option-card">
+                          <div class="option-card__icon-wrap">
+                            <img src="img/option-card-icon-03.png" alt="">
+                          </div>
+                          <div class="option-card__text">
+                            <p>Поднятие объявления на 20 дней + добавление эффектного графического выделения объявления</p>
+                          </div>
+                          <div class="option-card__info">
+                            <div class="option-card__info-img-wrap">
+                              <img src="img/option-card-img-02.png" alt="">
+                            </div>
+                            <div class="option-card__info-cost">690 руб.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="options-tovar__part">
+                <h2 class="options-tovar__title">Итого: 390 руб.</h2>
+                <div class="options-tovar__action">
+                  <a class="btn" href="#">Поднять</a>
+                  <a class="btn-link btn-link--gray" href="#">Подать объявление без поднятия</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__container">
+          <div class="page-footer__inner">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="PZD"></a>
+            <ul class="page-footer__nav">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="#">Продавцы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="btn">Добавить объявление</a>
+          </div>
+          <p class="page-footer__copyright"><a href="#">Разработано в Showbiz</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
