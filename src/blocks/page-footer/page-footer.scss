@@ -17,6 +17,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+
+      .logo {
+        margin-right: inherit;
+      }
+    }
   }
 
   .logo {
@@ -42,6 +50,10 @@
 
   &__copyright {
     text-align: right;
+    
+    @media (max-width: $screen-md) {
+      text-align: center;
+    }
 
     a {
       color: #8e8e8e;

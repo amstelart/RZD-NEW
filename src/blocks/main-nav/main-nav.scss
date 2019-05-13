@@ -24,6 +24,13 @@ $transition-time:             0.3s !default;
   position: relative;
   z-index: 10;
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
   // первый уровень
   &__list {
     margin: 0;

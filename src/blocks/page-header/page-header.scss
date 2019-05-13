@@ -24,11 +24,16 @@
   }
 
   &__inner {
-    padding: 34px 0 27px 0;
+    padding: 15px 0 15px 0;
+
+    @media (min-width: $screen-lg) {
+      padding: 34px 0 27px 0;
+    }
   }
 
   &__top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
   }
@@ -36,9 +41,14 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     @media (min-width: $screen-xl) {
       justify-content: flex-end;
+    }
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column-reverse;
     }
   }
 
@@ -46,18 +56,39 @@
     // width: 295px;
     margin-right: 30px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      flex-basis: 100%;
+      flex-grow: 1;
+      margin-bottom: 8px;
+      margin-right: 0;
+    }
   }
 
   &__search {
     flex-grow: 1;
     max-width: 845px;
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+      flex-grow: 1;
+    }
   }
 
-  &__nav {
-    margin-right: 35px;
+  .main-nav {
+    margin-right: 0;
 
-    @media (max-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       margin-right: 15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 35px;
     }
   }
 
@@ -70,6 +101,16 @@
 
       .btn {
         min-width: inherit !important;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+
+      margin-right: 0;
+      margin-top: 10px;
+
+      .btn {
+        min-width: 100% !important;
       }
     }
   }
