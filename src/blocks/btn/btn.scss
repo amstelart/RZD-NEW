@@ -63,6 +63,10 @@ $border-radius:               3px !default;
     }
   }
 
+  &--block {
+    min-width: 100%;
+  }
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

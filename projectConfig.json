@@ -101,7 +101,9 @@
     "l-seller": [],
     "seller-card": [],
     "entry-nav": [],
-    "fw-banner": []
+    "fw-banner": [],
+    "notifi-form": [],
+    "product-box": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

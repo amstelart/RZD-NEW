@@ -1,0 +1,152 @@
+// В этом файле должны быть стили для БЭМ-блока product-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: 5px;
+  border: solid 1px #a2a2a2;
+  background-color: #fff;
+
+  &__header {
+    padding: 25px 30px 0 30px;
+  }
+
+  &__header-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__head {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  &__bar-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cost {
+    flex-shrink: 0;
+    padding: 16px 0;
+
+    span {
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
+
+  &__separate {
+    height: 1px;
+    background: #d4d4d4;
+    margin-top: 15px;
+  }
+
+  &__body {
+    display: flex;
+    // flex-wrap: wrap;
+  }
+
+  &__col-main {
+    padding: 25px 30px 25px 30px;
+    flex-grow: 1;
+    // max-width: 100%;
+    // flex-basis: 100%;
+  }
+
+  &__media-wrap {
+    margin-bottom: 20px;
+  }
+
+  &__info-wrap {
+    display: flex;
+  }
+
+  &__char {
+    flex-basis: 40%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {}
+      strong {
+        font-weight: 400;
+        color: #7f7b7b;
+      }
+    }
+  }
+  &__descr {
+    flex-basis: 60%;
+    flex-grow: 1;
+  }
+
+  &__col-cont {
+    border-left: solid 1px #d4d4d4;
+    padding: 25px 30px 25px 30px;
+    max-width: 290px;
+    flex-basis: 290px;
+    flex-shrink: 0;
+  }
+
+  &__cont-part {
+    margin-bottom: 25px;
+  }
+
+  &__cont-title {
+    color: #e2001a;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &__cont-sub-title {
+    color: #7f7b7b;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__cont-phone {
+    border-radius: 4.3px;
+    border: solid 1px #a2a2a2;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    p {
+      margin: 0 0 5px 0;
+    }
+
+    a {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__cont-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      margin-bottom: 5px;
+
+      span {
+        color: #7f7b7b;
+      }
+    }
+  }
+
+}
