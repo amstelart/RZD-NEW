@@ -12,9 +12,9 @@ $gray-lighter:                hsl(0, 0%, 80%);
 $gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
-$color-main:                  hsl(208, 98%, 43%);
+$color-main:                  #e2001a;
 $color-success:               hsl(120, 39%, 54%);
-$color-danger:                hsl(2, 64%, 58%);
+$color-danger:                #ff0000;
 $color-warning:               hsl(35, 84%, 62%);
 
 
@@ -78,8 +78,8 @@ $grid-gutter-width:           30px;
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      0.6em;
+$field-padding-horizontal:    0.75em;
 
 $border-radius:               3px;
 $opacity:                     0.7;

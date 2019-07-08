@@ -17,6 +17,15 @@
     font-size: 17px;
     font-weight: 700;
 
+    a {
+      color: #000;
+
+      &:hover {
+        color: $color-main;
+        text-decoration: none;
+      }
+    }
+
     span {
       color: #7d7a7a;
       font-size: 14px;

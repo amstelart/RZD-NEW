@@ -9,7 +9,10 @@
   &.field-text,
   &.field-radio,
   &.field-select {
-    display: flex;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
   }
 
   .field-text__name,
@@ -21,18 +24,21 @@
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0.4em;
-    margin-top: 0.4em;
+    margin-top: 0.6875em;
+  }
+
+  .field-radio__name {
+    margin-right: 1em;
+  }
+
+  .field-radio__input-wrap {
+    margin-top: 0.6875em !important;
   }
 
   .field-text__input-wrap,
   .field-radio__radio-wrap,
   .field-select__select-wrap {
     flex-grow: 1;
-  }
-
-  .field-radio__input-wrap {
-    // margin-top: 0.6875em;
-    margin-top: 0;
   }
 
 }

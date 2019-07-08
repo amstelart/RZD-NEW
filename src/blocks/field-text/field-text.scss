@@ -19,7 +19,7 @@ $border-radius:               3px !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: ($line-height / 2);
+  margin-bottom: 19px;
 
   &__name {
     @include field-name;
@@ -88,11 +88,16 @@ $border-radius:               3px !default;
   }
 
   &--lk {
-    display: flex;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
 
     #{$block-name}__name {
       color: #7d7a7a;
       font-size: 14px;
+      font-weight: 400;
+      margin-top: 0.6em;
       margin-right: 18px;
       flex-shrink: 0;
       width: 160px;

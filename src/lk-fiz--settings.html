@@ -44,10 +44,29 @@
                   <form action="" class="lk-setting__form">
                     <div class="lk-setting__part">
                       <div class="lk-setting__fields-wrap">
+                        <div class="field-photo">
+                          <span class="field-photo__name">Фотография</span>
+                          <div class="field-photo__img-wrap">
+                            <img class="field-photo__img" src="img/lk-photo.jpg" alt="">
+                          </div>
+                          <a class="field-photo__link" href="#">Изменить фотографию</a>
+                        </div>
                         <label class="field-text field-text--lk">
-                          <span class="field-text__name">ФИО контактного лица</span>
+                          <span class="field-text__name">Фамилия</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="text" placeholder="Смирнов" id="" name="">
+                          </span>
+                        </label>
+                        <label class="field-text field-text--lk">
+                          <span class="field-text__name">Имя</span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Смирнов" id="" name="">
+                          </span>
+                        </label>
+                        <label class="field-text field-text--lk">
+                          <span class="field-text__name">Отчество</span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Смирнов" id="" name="">
                           </span>
                         </label>
                         <div class="field-actions field-actions--lk">
@@ -60,21 +79,15 @@
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">Телефон</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="text" placeholder="+7(910) 310-11-11" id="" name="">
                           </span>
                         </label>
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">E-mail</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="text" placeholder="loco@yandex.ru" id="" name="">
                           </span>
                         </label>
-                        <div class="field-checkbox field-checkbox--lk">
-                          <label class="field-checkbox__name">
-                            <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                            <span class="field-checkbox__name-text">Присылать уведомления на электронную почту</span>
-                          </label>
-                        </div>
                         <div class="field-actions field-actions--lk">
                           <button class="btn">Сохранить</button>
                         </div>
@@ -85,7 +98,7 @@
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">Город</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="text" placeholder="Москва" id="" name="">
                           </span>
                         </label>
                         <div class="field-actions field-actions--lk">
@@ -94,24 +107,36 @@
                       </div>
                     </div>
                     <div class="lk-setting__part">
+                      <h2 class="lk-setting__part-title">Уведомления</h2>
+                      <div class="lk-setting__subs">
+                        <p class="gray-text">Вы подписаны на следующие уведомления:</p>
+                        <ul class="lk-setting__subs-list">
+                          <li>Вагонная служба <a class="subs-link" href="#">Отписаться</a></li>
+                          <li>Локомотивная служба <a class="subs-link" href="#">Отписаться</a></li>
+                          <li>Пассажирская служба <a class="subs-link" href="#">Отписаться</a></li>
+                        </ul>
+                        <p><a class="subs-link" href="#">Отписаться от всех</a></p>
+                      </div>
+                    </div>
+                    <div class="lk-setting__part">
                       <h2 class="lk-setting__part-title">Смена пароля</h2>
                       <div class="lk-setting__fields-wrap">
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">Текущий пароль</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="password" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="password" placeholder="********" id="" name="">
                           </span>
                         </label>
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">Новый пароль</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="password" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="password" placeholder="********" id="" name="">
                           </span>
                         </label>
                         <label class="field-text field-text--lk">
                           <span class="field-text__name">Повторите пароль</span>
                           <span class="field-text__input-wrap">
-                            <input class="field-text__input" type="password" placeholder="placeholder" id="" name="">
+                            <input class="field-text__input" type="password" placeholder="********" id="" name="">
                           </span>
                         </label>
                         <div class="field-actions field-actions--lk">

@@ -21,6 +21,7 @@
 
   &__title {
     margin-top: 0;
+    margin-bottom: 30px;
   }
 
   &__field-wrap-sm {
@@ -29,6 +30,18 @@
 
   &__field-wrap-md {
     max-width: 625px;
+  }
+
+  .field-text--price {
+    .field-text__input-wrap {
+      max-width: 200px;
+      display: flex;
+
+      .field-text__sub-name {
+        align-self: center;
+        margin-left: 10px;
+      }
+    }
   }
 
 }

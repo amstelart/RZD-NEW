@@ -13,7 +13,7 @@
   align-items: center;
   min-width: 200px;
   padding: 0 15px;
-  // margin-bottom: 30px;
+  margin-bottom: 30px;
 
   &__inner {
     flex-grow: 1;
@@ -25,10 +25,10 @@
     background: #fff;
     border: solid 1px #a2a2a2;
     border-radius: 5px;
-    transition: background $transition-time;
+    transition: box-shadow $transition-time;
 
     &:hover {
-      background: #fae6ab;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -60,6 +60,10 @@
     a {
       color: #000;
       display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -68,6 +72,12 @@
       list-style: none;
       padding: 0;
       margin: 0;
+    }
+  }
+
+  &--top {
+    #{$block-name}__inner {
+      background: #fae6ab;
     }
   }
 

@@ -18,7 +18,7 @@ $color-danger:                hsl(2, 64%, 58%) !default;
 
     #{$block-name}__input {
       border-color: $color-danger;
-      background-color: lighten($color-danger, 35%);
+      // background-color: lighten($color-danger, 35%);
     }
   }
 }

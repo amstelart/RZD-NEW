@@ -92,8 +92,8 @@ gulp.task('style', function () {
     .pipe(debug({title: "Style:"}))
     .pipe(sass())
     .pipe(postcss(postCssPlugins))
-    .pipe(gulpIf(!isDev, cleanss()))
-    .pipe(rename('style.min.css'))
+    // .pipe(gulpIf(!isDev, cleanss()))
+    .pipe(rename('style.css'))
     .pipe(gulpIf(isDev, sourcemaps.write('/')))
     .pipe(size({
       title: 'Размер',
@@ -326,8 +326,8 @@ gulp.task('js', function (callback) {
           this.emit('end');
         }
       }))
-      .pipe(concat('script.min.js'))
-      .pipe(gulpIf(!isDev, uglify()))
+      .pipe(concat('script.js'))
+      // .pipe(gulpIf(!isDev, uglify()))
       .pipe(size({
         title: 'Размер',
         showFiles: true,

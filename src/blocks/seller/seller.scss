@@ -44,6 +44,14 @@
 
   &__stats {
     margin-top: auto;
+
+    a {
+      padding: 3px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__stats-name {

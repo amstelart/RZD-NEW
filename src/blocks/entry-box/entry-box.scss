@@ -12,7 +12,7 @@
 
   &__header {
     border-bottom: 1px solid #a2a2a2;
-    padding: 15px 25px;
+    padding: 25px 25px 15px 25px;
   }
 
   &__body {
@@ -40,6 +40,11 @@
     }
   }
 
+  .field-text,
+  .field-select {
+    margin-bottom: 19px;
+  }
+
   .field-actions {
     .btn {
       min-width: 100%;
@@ -53,6 +58,53 @@
 
     #{$block-name}__title {
       margin-bottom: 0;
+    }
+
+    .login-options {
+      display: flex;
+      justify-content: space-between;
+
+      .field-checkbox {
+        margin-right: auto;
+      }
+    }
+  }
+
+  &--successful {
+    padding: 20px;
+    text-align: center;
+
+    #{$block-name}__header {
+      border-bottom: none;
+    }
+
+    #{$block-name}__title {
+      color: $color-main;
+    }
+
+    #{$block-name}__body {
+      .mb {
+
+        @media (min-width: $screen-md) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  &--password-recovery {
+
+    #{$block-name}__header {
+      border-bottom: none;
+      text-align: center;
+    }
+
+    #{$block-name}__body {
+      padding-top: 0;
     }
   }
 }

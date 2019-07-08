@@ -115,6 +115,23 @@ $field-padding-horizontal:    0.7em !default;
   }
 
   &--entry-box {
+    #{$block-name}__links {
+      justify-content: center;
+    }
+    #{$block-name}__link-wrap {
+      flex-grow: 0;
+      border:none;
+
+      &--active {
+        #{$block-name}__link {
+          color: $color-main;
+        }
+      }
+    }
+    #{$block-name}__link {
+      background: #fff;
+      color: #989898;
+    }
     #{$block-name}__content-wrapper {
       padding: 20px 0;
       border-radius: 0;

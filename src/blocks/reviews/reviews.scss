@@ -18,21 +18,28 @@
         bottom: 50%;
         transform: translateY(-50%);
 
+        &:focus {
+          outline: none;
+        }
+
         svg {
           stroke: #000;
         }
       }
 
       .owl-prev {
-        left: -30px;
+        left: -10px;
       }
       .owl-next {
-        right: -30px;
+        right: -10px;
       }
     }
   }
 
-  &__item {}
+  &__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &__item-title {
     text-transform: uppercase;

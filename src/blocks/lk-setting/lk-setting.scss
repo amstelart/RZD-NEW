@@ -30,4 +30,31 @@
       max-width: 525px;
     }
   }
+
+  &__subs {
+    margin: 30px 0;
+
+    .subs-link {
+      color: #7d7a7a;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-main;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__subs-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.6875em;
+    }
+
+    .subs-link {
+      margin-left: 15px;
+    }
+  }
 }
