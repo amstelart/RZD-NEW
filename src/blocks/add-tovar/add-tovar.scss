@@ -6,6 +6,46 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__type-wrap {
+    margin-bottom: 15px;
+  }
+  &__type-title {
+    font-weight: 400;
+  }
+
+  &__type {
+
+    .field-radio__name-text {
+      border: 1px solid $border-color;
+      padding: 1rem;
+      border-radius: 3px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      padding-left: 30px;
+      padding-right: 40px;
+      display: block;
+      cursor: pointer;
+
+      &:before {
+        left: 10px;
+        top: 13px;
+      }
+
+      &:after {
+        left: 14px;
+        top: 17px;
+      }
+    }
+
+    input:checked ~ .field-radio__name-text {
+      border-color: $color-main;
+    }
+
+    .field-radio__name {
+      padding-left: 0;
+    }
+  }
+
   &__part {
 
     padding-top: 20px;
@@ -16,6 +56,12 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    .field-actions {
+      .btn {
+        margin-bottom: 20px;
+      }
     }
   }
 

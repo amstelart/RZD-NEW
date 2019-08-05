@@ -8,7 +8,8 @@
 
   &.field-text,
   &.field-radio,
-  &.field-select {
+  &.field-select,
+  &.field-photo-upload {
 
     @media (min-width: $screen-md) {
       display: flex;
@@ -17,7 +18,8 @@
 
   .field-text__name,
   .field-radio__title,
-  .field-select__name {
+  .field-select__name,
+  .field-photo-upload__title {
     flex-shrink: 0;
     width: 160px;
     color: #7f7b7b;
@@ -37,7 +39,8 @@
 
   .field-text__input-wrap,
   .field-radio__radio-wrap,
-  .field-select__select-wrap {
+  .field-select__select-wrap,
+  .field-photo-upload__wrap {
     flex-grow: 1;
   }
 

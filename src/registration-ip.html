@@ -31,13 +31,13 @@
                   </div>
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio" checked>
                       <span class="field-radio__name-text">ИП</span>
                     </label>
                   </div>
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
                       <span class="field-radio__name-text">Физическое лицо</span>
                     </label>
                   </div>
@@ -45,6 +45,11 @@
               </div>
             </div>
             <div class="entry-box__body">
+              <label class="field-text required-field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" required placeholder="ИНН" id="" name="">
+                </span>
+              </label>
               <label class="field-text required-field">
                 <span class="field-text__input-wrap">
                   <input class="field-text__input" type="text" required placeholder="Фамилия" id="" name="">
@@ -60,9 +65,29 @@
                   <input class="field-text__input" type="text" required placeholder="Отчество" id="" name="">
                 </span>
               </label>
+              <label class="field-text required-field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" required placeholder="ОГРНИП" id="" name="">
+                </span>
+              </label>
               <label class="field-text">
                 <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="+7 (___) _______" id="" name="">
+                  <input class="field-text__input" type="text" required placeholder="ОКПО" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" required placeholder="ОКВЭД" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" required placeholder="Фактический адрес" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
                 </span>
               </label>
               <label class="field-text required-field">
@@ -70,20 +95,14 @@
                   <input class="field-text__input" type="email" required placeholder="E-mail" id="" name="">
                 </span>
               </label>
-              <label class="field-text">
+              <label class="field-text required-field">
                 <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Город" id="" name="">
+                  <input class="field-text__input" type="password" placeholder="Пароль" id="" name="">
                 </span>
               </label>
-              <label class="field-text field-text--error">
+              <label class="field-text required-field">
                 <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="password" placeholder="*******" id="" name="">
-                </span>
-              </label>
-              <label class="field-text field-text--error">
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="password" placeholder="*******" id="" name="">
-                  <span class="field-text__help-text">Введеные пароли не совпадают</span>
+                  <input class="field-text__input" type="password" placeholder="Повторите пароль" id="" name="">
                 </span>
               </label>
               <div class="field-actions">

@@ -38,6 +38,18 @@
     .field-radio__input-wrap {
       margin-top: 0.6875em;
     }
+
+    .field-radio__name {
+      margin-right: 15px;
+    }
+
+    .field-radio__name-text {
+      color: #989898;
+    }
+
+    input:checked ~ .field-radio__name-text {
+      color: #000;
+    }
   }
 
   .field-text,
