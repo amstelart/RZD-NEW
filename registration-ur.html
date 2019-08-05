@@ -11,6 +11,7 @@
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/all.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
 
   <script>
@@ -113,6 +114,12 @@
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
                       <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">ИП</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
                       <span class="field-radio__name-text">Физическое лицо</span>
                     </label>
                   </div>
@@ -131,32 +138,22 @@
                 </ul>
                 <div class="tabs__content-wrapper">
                   <div class="tabs__content-item tabs__content-item--active" id="entry-box-tab-01" role="tabpanel">
-                    <label class="field-select">
-                      <div class="field-select__select-wrap">
-                        <select class="field-select__select" id="" name="">
-                          <option>Форма собственности</option>
-                          <option>Значение 1</option>
-                          <option>Значение 2</option>
-                          <option>Значение 3</option>
-                        </select>
-                      </div>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Название компании" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
+                    <label class="field-text required-field">
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="ИНН" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Название компании" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text required-field">
+                      <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="ОГРН" id="" name="">
                       </span>
                     </label>
-                    <label class="field-text">
+                    <label class="field-text required-field">
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="КПП" id="" name="">
                       </span>
@@ -182,28 +179,43 @@
                       </span>
                     </label>
                     <div class="field-actions">
-                      <button class="btn">Дальше</button>
+                      <button class="btn">Дальше <i class="fas fa-chevron-right"></i></button>
                     </div>
                   </div>
                   <div class="tabs__content-item" id="entry-box-tab-02" role="tabpanel">
                     <label class="field-text">
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="ФИО контактного лица" id="" name="">
+                        <input class="field-text__input" type="text" placeholder="Фамилия контактного лица" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Имя контактного лица" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Отчество контактного лица" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text required-field">
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
                       </span>
                     </label>
-                    <label class="field-text">
+                    <label class="field-text required-field">
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                        <input class="field-text__input" type="email" placeholder="E-mail" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="Физический адрес" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Юридический адрес" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
@@ -218,11 +230,14 @@
                     </label>
                     <div class="field-actions">
                       <button class="btn">Зарегистрироваться</button>
-                      <div class="field-checkbox">
-                        <label class="field-checkbox__name">
-                          <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                          <span class="field-checkbox__name-text">Я согласен с</span> <a href="#">условиями обработки данных</a>
-                        </label>
+                      <div class="required-info">
+                        <div class="field-checkbox">
+                          <label class="field-checkbox__name">
+                            <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                            <span class="field-checkbox__name-text">Я согласен с</span> <a href="#">условиями обработки данных</a>
+                          </label>
+                        </div>
+                        <div class="field-actions__text"><span>*</span> — обязательные поля</div>
                       </div>
                     </div>
                   </div>

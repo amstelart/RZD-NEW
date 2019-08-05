@@ -11,6 +11,7 @@
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/all.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
 
   <script>
@@ -111,66 +112,46 @@
             <form action="" class="add-tovar">
               <div class="add-tovar__part">
                 <h2 class="add-tovar__title">Добавить объявления</h2>
-                <div class="add-tovar__field-wrap-sm">
-                  <label class="field-select field-inline">
-                    <div class="field-select__name">Служба</div>
-                    <div class="field-select__select-wrap">
-                      <select class="field-select__select" id="" name="">
-                        <option>Вагонная служба</option>
-                        <option>Значение 1</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
+                <div class="add-tovar__type-wrap">
+                  <h5 class="add-tovar__type-title">Вы добавляете:</h5>
+                  <div class="add-tovar__type field-radio field-inline">
+                    <div class="field-radio__input-wrap">
+                      <label class="field-radio__name">
+                        <input class="field-radio__input" type="radio" id="" name="add-tovar-type">
+                        <span class="field-radio__name-text">Товар</span>
+                      </label>
                     </div>
-                  </label>
-                  <label class="field-select field-inline">
-                    <div class="field-select__name">Вид товара</div>
-                    <div class="field-select__select-wrap">
-                      <select class="field-select__select" id="" name="">
-                        <option>Запасные части</option>
-                        <option>Значение 1</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
+                    <div class="field-radio__input-wrap">
+                      <label class="field-radio__name">
+                        <input class="field-radio__input" type="radio" id="" name="add-tovar-type" checked>
+                        <span class="field-radio__name-text">Услугу</span>
+                      </label>
                     </div>
-                  </label>
-                  <label class="field-select field-inline">
-                    <div class="field-select__name">Категория</div>
-                    <div class="field-select__select-wrap">
-                      <select class="field-select__select" id="" name="">
-                        <option>Ходовая часть</option>
-                        <option>Значение 1</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-                    </div>
-                  </label>
-                  <label class="field-select field-inline">
-                    <div class="field-select__name">Подкатегория</div>
-                    <div class="field-select__select-wrap">
-                      <select class="field-select__select" id="" name="">
-                        <option>Литые детали тележки</option>
-                        <option>Значение 1</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-                    </div>
-                  </label>
-                  <label class="field-select field-inline">
-                    <div class="field-select__name">Нуменклатура</div>
-                    <div class="field-select__select-wrap">
-                      <select class="field-select__select" id="" name="">
-                        <option>Рамка боковая</option>
-                        <option>Значение 1</option>
-                        <option>Значение 2</option>
-                        <option>Значение 3</option>
-                      </select>
-                    </div>
-                  </label>
+                  </div>
                 </div>
-              </div>
-              <div class="add-tovar__part">
                 <div class="add-tovar__field-wrap-sm">
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Вид объявления</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Инфраструктура</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select field-inline">
+                    <div class="field-select__name">Тип объявления</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Грузовые перевозки</option>
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                      </select>
+                    </div>
+                  </label>
                   <label class="field-select field-inline">
                     <div class="field-select__name">Местоположение</div>
                     <div class="field-select__select-wrap">
@@ -183,14 +164,12 @@
                     </div>
                   </label>
                 </div>
-                <div class="add-tovar__field-wrap-md">
-                  <label class="field-text field-inline">
-                    <div class="field-select__name">Описание</div>
-                    <span class="field-text__input-wrap">
-                      <textarea class="field-text__input" placeholder="Введите описание товара" rows="8" cols="80"></textarea>
-                    </span>
-                  </label>
-                </div>
+                <label class="field-text field-inline">
+                  <div class="field-select__name">Описание</div>
+                  <span class="field-text__input-wrap">
+                    <textarea class="field-text__input" placeholder="Введите описание товара" rows="8" cols="80"></textarea>
+                  </span>
+                </label>
                 <div class="add-tovar__field-wrap-sm">
                   <label class="field-text field-text--price field-inline">
                     <span class="field-text__name">Цена:</span>
@@ -211,6 +190,17 @@
                       <label class="field-radio__name">
                         <input class="field-radio__input" type="radio" id="" name="demo-radio">
                         <span class="field-radio__name-text">Б/У</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-tovar__field-wrap-sm">
+                  <div class="field-photo-upload field-inline">
+                    <div class="field-photo-upload__title">Фотографии:</div>
+                    <div class="field-photo-upload__wrap">
+                      <input class="field-photo-upload__input" id="photo-upload" type="file"/>
+                      <label class="field-photo-upload__btn" for="photo-upload">
+                        <svg width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plus"></use></svg>
                       </label>
                     </div>
                   </div>
