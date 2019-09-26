@@ -926,12 +926,12 @@ a.btn--disabled {
 .btn--block {
     min-width: 100%; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06899683969888724.png);
+  background-image: url(../img/sprite-08984329411279985.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06899683969888724.png);
+  background-image: url(../img/sprite-08984329411279985.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -1606,6 +1606,11 @@ input:checked ~ .field-toggler__name-text:after {
 .dropdown__menu--right {
       left: auto;
       right: 0; }
+.dropdown__menu--share {
+      background: #fff;
+      -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 1, 0.24);
+              box-shadow: 0px 0px 29px 0px rgba(0, 0, 1, 0.24);
+      padding: 15px 15px 5px 15px; }
 .dropdown--open .dropdown__menu {
     z-index: 1;
     visibility: visible;
@@ -4154,6 +4159,34 @@ a.btn--disabled {
 .contacts-list__item .fas {
       color: #e2001a;
       margin-right: 10px; }
+.share-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+.share-list__link {
+    display: block;
+    width: 32px !important;
+    height: 32px !important;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center; }
+.share-list__link--vk {
+      background-image: url("../img/vk-icon.png"); }
+.share-list__link--fa {
+      background-image: url("../img/fa-icon.png"); }
+.share-list__link--tw {
+      background-image: url("../img/tw-icon.png"); }
+.share-list__link--ok {
+      background-image: url("../img/ok-icon.png"); }
 @media (min-width: 480px) {
     dd {
       margin-left: 1.8em; }
