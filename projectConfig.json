@@ -106,7 +106,8 @@
     "product-box": [],
     "field-photo": [],
     "field-photo-upload": [],
-    "contacts-list": []
+    "contacts-list": [],
+    "share-list": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока share-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.share-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  &__item {
+  }
+
+  &__link {
+
+    display: block;
+    width: 32px !important;
+    height: 32px !important;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+
+    &--vk {
+      background-image: url('../img/vk-icon.png');
+    }
+    &--fa {
+      background-image: url('../img/fa-icon.png');
+    }
+    &--tw {
+      background-image: url('../img/tw-icon.png');
+    }
+    &--ok {
+      background-image: url('../img/ok-icon.png');
+    }
+  }
+}
