@@ -113,6 +113,7 @@
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+    "../../node_modules/slider-pro/dist/css/slider-pro.min.css",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [
@@ -138,6 +139,7 @@
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
     "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/slider-pro/dist/js/jquery.sliderPro.js",
     "./src/js/global-script.js"
   ],
   "dirs": {

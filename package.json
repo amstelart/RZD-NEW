@@ -61,6 +61,7 @@
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",
     "postcss-object-fit-images": "^1.1.2",
+    "slider-pro": "^1.5.0",
     "stylelint": "^8.2.0",
     "vinyl-buffer": "^1.0.0",
     "yaspeller": "^4.0.0"

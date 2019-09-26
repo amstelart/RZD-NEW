@@ -6,6 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  padding: 20px 0;
+
 
   &__container {
     @include container;
